@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Letting browser know that we're using UTF-8-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!--CSS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <!-- Browser's tab/title bar-->
+    <title>Aghaaz | Home</title>
+    <link rel="icon" href="media/favicon.gif" type="image/gif" sizes="32x32">
+  </head>
+
+  <body>
+
+    <!-- NavBar-->
+    <header>
+      <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo right"><img src="./media/aghaaz_logo.png" alt="Logo" width="75" height="75"></a>
+          <ul class="left hide-on-med-and-down">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a class="dropdown-trigger" href="#" data-target="About-us-dropdown">About Us<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#">Active Programs</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="#">Past Work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul id="nav-mobile" class="sidenav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Active Programs</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="#">Past Work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <!-- Dropdown Structures -->
+          <ul id="About-us-dropdown" class="dropdown-content">
+            <li><a href="#!">Vision</a></li>
+            <li><a href="#!">History</a></li>
+            <li><a href="#!">People</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="https://picsum.photos/1500"></a>
+        <a class="carousel-item" href="#two!"><img src="https://picsum.photos/1500"></a>
+        <a class="carousel-item" href="#three!"><img src="https://picsum.photos/1500"></a>
+        <a class="carousel-item" href="#four!"><img src="https://picsum.photos/1500"></a>
+      </div>
+      <div class="row slider-center hide-on-small-only"> <i id="next" class="btn-floating btn-small waves-effect waves-light grey"> <i class="material-icons">chevron_right</i> </i> <i id="prev" class="btn-floating btn-small waves-effect waves-light grey"> <i class="material-icons">chevron_left</i> </i></div>
+    </main>
+    
+    <footer class="page-footer" id="aghaaz-cyan">
+      <div class="footer-copyright" id="aghaaz-cyan">
+        <div class="container">
+        <div class="row">
+          <div class="col m7 push-m5">
+            <span class="hide-on-small-only">
+            <a class="grey-text text-lighten-4 right footer-socials-etc" href="#!">
+            <img src="./media/facebook_logo.png" height="29px" width="29px">
+            <img id="insta-logo" src="./media/instagram_logo.png" height="29px" width="29px">
+            <i class="material-icons font-29">phone</i>
+            <i class="material-icons font-29">email</i>
+            </a> 
+            </span>
+          </div>
+          <div class="col m5 pull-m7 hide-on-small-only"><span class="white-text center-align">Aghaaz &copy 2020 | All rights reserved.</span></div>
+          
+          <div class="show-on-small hide-on-med-and-up center">
+            
+            <div class="col s12">
+              <a class="grey-text text-lighten-4 footer-socials-etc" href="#!">
+              <img src="./media/facebook_logo.png" height="29px" width="29px">
+              <img id="insta-logo" src="./media/instagram_logo.png" height="29px" width="29px">
+              <i class="material-icons font-29">phone</i>
+              <i class="material-icons font-29">email</i>
+              </a> 
+            </div>
+            <div class="col s12"><span class="white-text">Aghaaz &copy 2020 | All rights reserved.</span></div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>

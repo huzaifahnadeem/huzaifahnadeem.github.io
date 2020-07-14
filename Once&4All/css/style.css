@@ -1,0 +1,62 @@
+/* general */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+flex: 1 0 auto;
+}
+
+#aghaaz-cyan {
+    color: #04baca;
+    background-color: #04baca;
+}
+
+.center {
+    text-align: center !important;
+}
+
+/* navigation */
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: 75px;
+    line-height: 75px;
+}
+
+.nav-wrapper a {
+    color: black;
+}
+
+#About-us-dropdown a {
+    color: black;
+}
+
+/* main */
+.row.slider-center {
+    position: absolute;
+    top:50%;
+    width:100%;
+}
+i#next {
+    position: absolute;
+    right: 10px;    
+}
+
+i#prev {
+    position: absolute;
+    left: 20px;
+}
+
+/* footer */
+i.font-29 {
+    font-size: 29px;
+}
+
+#insta-logo {
+    filter: invert(100%);
+}
+
+.footer-socials-etc img, .footer-socials-etc i {
+    margin-left: 14.5px;
+}
