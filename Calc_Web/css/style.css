@@ -1,0 +1,13 @@
+span.card-title {
+    padding-bottom: 25px;
+    padding-left: 20px;
+    border: 2px white solid;
+}
+a.btn-floating {
+    margin-left: 20px;
+}
+
+#key-CE {
+    margin-left: 18px;
+    border-radius: 20px;
+}
