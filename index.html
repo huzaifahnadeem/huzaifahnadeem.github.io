@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 	<head>
 		<title>Huzaifah Nadeem</title>
-		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
 	<body>
@@ -17,8 +16,8 @@
     		<div class="blurb">
         		<h1>Hi there, I'm Huzaifah Nadeem. </h1>
 				<p>I'm currently working on this website but hopefully i will be done very soon. Meanwhile, if you want to contact me for some reason, you can email me at: <b> huzaifahnadeem@gmail.com </b>.</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
+    		</div>
+		</div>
 		<footer>
     		<ul>
         		<li><a href="mailto:huzaifahnadeem@gmail.com">email</a></li>
@@ -26,4 +25,120 @@
 			</ul>
 		</footer>
 	</body>
-</html>
+</html> -->
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <link type="text/css" rel="stylesheet" href="css/style.css"/>
+      <title>Huzaifah Nadeem | Resume</title>
+
+    </head>
+
+    <body>
+
+      <!--  Side Nav  -->
+      <!-- <nav class="deep-purple lighten-4"> -->
+        <div class="nav-wrapper">  
+          
+          <ul id="slide-out" class="sidenav sidenav-fixed">
+            <div class="center-align">
+              <img class="responsive-img circle z-depth-2" src="Avatar.png" width="250" height="250"/>
+            </div>
+			<li><p></p></li>
+            <li><a href="https://www.linkedin.com/in/huzaifahnadeem/">LinkedIn</a></li>
+            <li><a href="https://github.com/huzaifahnadeem/">Github</a></li>
+          </ul>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      <!-- </nav> -->
+      
+      <!--  Main Page  -->
+      <main class="center-align">
+        
+        <h6 class="card-panel"><div class="blurb">
+			<h2>Hi there, I'm Huzaifah Nadeem. </h2>
+			<p>I'm currently working on this website but hopefully I will be done very soon. Meanwhile, if you want to contact me for some reason, you use the button on the lower right side of the screen or you may email me at: <b> huzaifahnadeem@gmail.com </b>. You can also find my LinkedIn and Github profiles from the panel on the left side.</p>
+		</div></h6>
+        
+        <!-- Hidden Overlay contact me form -->
+        <div class="row" id="overlay">
+          <div class="col s12 m6">
+            <div class="card blue-grey">
+              <div class="card-content white-text">
+                <span class="card-title">Send me a message!</span>
+                
+              <div class="row">
+                <form onsubmit="sendToGForm()" name="gform" id="gform" enctype="text/plain" class="col s12" action="https://docs.google.com/forms/d/e/1FAIpQLScK-0jrOpfGiQl6j4OBd4hDXv_423BpU6GrIeWjADZ9CtGj4g/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                  <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input placeholder="John Doe" type="text" class="validate" id="entry.443958714" name="entry.443958714">
+                    <label for="name">Your Name</label>
+                  </div>
+                  
+                  <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input placeholder="email@placeholder.com" type="text" class="validate" id="entry.1951267217" name="entry.1951267217">
+                    <label for="name">Your Email</label>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="input-field col s10">
+                      <i class="material-icons prefix">mode_edit</i>
+                      <textarea id="textarea1" class="materialize-textarea" placeholder="Say Hello!" id="entry.1042637603" name="entry.1042637603"></textarea>
+                      <label for="textarea1">Your Message</label>
+                    </div>
+              
+                    <!-- <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">send</i><input type="submit" value="Submit"></a> -->
+                    <button type="submit" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">send</i></button>
+                  </div>
+          
+                </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+              </div>
+
+
+              </div>
+              <div class="card-action">
+                <a id="close_form_btn">Close</a>
+              </div>
+            </div>
+          </div>
+        </div>
+              
+              
+            </div>
+          </div>
+        </div>
+
+      </main>
+      
+      <!--  Floating Action Button-->
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large waves-effect deep-purple lighten-2 z-depth-2">
+          <i class="large material-icons">more_vert</i>
+        </a>
+        <ul>
+          <li><a href="#" class="btn-floating deep-purple waves-effect" id="form_button"><i class="material-icons">message</i></a></li>
+          <li><a href="tel:+923337317147" class="btn-floating red waves-effect"><i class="material-icons">phone</i></a></li>
+          <li><a href="mailto:huzaifahnadeem@gmail.com" class="btn-floating yellow darken-1 waves-effect"><i class="material-icons">email</i></a></li>
+        </ul>
+      </div>   
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/init.js"></script>
+
+      <!-- For gForm:  -->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      
+    </body>
+  </html>
