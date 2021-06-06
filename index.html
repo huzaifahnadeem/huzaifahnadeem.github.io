@@ -1,144 +1,164 @@
-<!-- <!DOCTYPE html>
-<html>
-	<head>
-		<title>Huzaifah Nadeem</title>
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Huzaifah Nadeem. </h1>
-				<p>I'm currently working on this website but hopefully i will be done very soon. Meanwhile, if you want to contact me for some reason, you can email me at: <b> huzaifahnadeem@gmail.com </b>.</p>
-    		</div>
-		</div>
-		<footer>
-    		<ul>
-        		<li><a href="mailto:huzaifahnadeem@gmail.com">email</a></li>
-        		<li><a href="https://github.com/huzaifahnadeem">github.com/huzaifahnadeem</a></li>
-			</ul>
-		</footer>
-	</body>
-</html> -->
-
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<html>
 
-      <link type="text/css" rel="stylesheet" href="css/style.css"/>
-      <title>Huzaifah Nadeem | Homepage</title>
+  <head>
 
-    </head>
+    <!--
+    Using the following HTML template:
+    
+    Strata by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    -->
 
-    <body>
+    <title>Huzaifah Nadeem</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
 
-      <!--  Side Nav  -->
-      <!-- <nav class="deep-purple lighten-4"> -->
-        <div class="nav-wrapper">  
-          
-          <ul id="slide-out" class="sidenav sidenav-fixed">
-            <div class="center-align">
-              <img class="responsive-img circle z-depth-2" src="Avatar.png" width="250" height="250"/>
-            </div>
-			<li><p></p></li>
-            <li><a href="https://www.linkedin.com/in/huzaifahnadeem/">LinkedIn</a></li>
-            <li><a href="https://github.com/huzaifahnadeem/">Github</a></li>
-          </ul>
-          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-      <!-- </nav> -->
-      
-      <!--  Main Page  -->
-      <main class="center-align">
-        
-        <h6 class="card-panel"><div class="blurb">
-			<h2>Hi there, I'm Huzaifah Nadeem. </h2>
-			<p>I'm currently working on this website but hopefully I will be done very soon. Meanwhile, if you want to contact me for some reason, you use the button on the lower right side of the screen or you may email me at: <b> huzaifahnadeem@gmail.com </b>. You can also find my LinkedIn and Github profiles from the panel on the left side.</p>
-		</div></h6>
-        
-        <!-- Hidden Overlay contact me form -->
-        <div class="row" id="overlay">
-          <div class="col s12 m6">
-            <div class="card blue-grey">
-              <div class="card-content white-text">
-                <span class="card-title">Send me a message!</span>
-                
-              <div class="row">
-                <form onsubmit="sendToGForm()" name="gform" id="gform" enctype="text/plain" class="col s12" action="https://docs.google.com/forms/d/e/1FAIpQLScK-0jrOpfGiQl6j4OBd4hDXv_423BpU6GrIeWjADZ9CtGj4g/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-                  <div class="input-field">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input placeholder="John Doe" type="text" class="validate" id="entry.443958714" name="entry.443958714">
-                    <label for="name">Your Name</label>
-                  </div>
-                  
-                  <div class="input-field">
-                    <i class="material-icons prefix">email</i>
-                    <input placeholder="email@placeholder.com" type="text" class="validate" id="entry.1951267217" name="entry.1951267217">
-                    <label for="name">Your Email</label>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="input-field col s10">
-                      <i class="material-icons prefix">mode_edit</i>
-                      <textarea id="textarea1" class="materialize-textarea" placeholder="Say Hello!" id="entry.1042637603" name="entry.1042637603"></textarea>
-                      <label for="textarea1">Your Message</label>
-                    </div>
-              
-                    <!-- <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">send</i><input type="submit" value="Submit"></a> -->
-                    <button type="submit" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">send</i></button>
-                  </div>
-          
-                </form>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-              </div>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <img src="images/avatar.jpg" alt="" class="image avatar" />
+        <h1>
+          <strong>I am Huzaifah Nadeem</strong>,<br />
+          an Undergraduate CS Student<br />
+          at LUMS, Lahore, Pakistan.
+        </h1>
+      </div>
+    </header>
 
-
-              </div>
-              <div class="card-action">
-                <a id="close_form_btn">Close</a>
-              </div>
-            </div>
-          </div>
-        </div>
-              
-              
-            </div>
-          </div>
-        </div>
-
-      </main>
-      
-      <!--  Floating Action Button-->
-      <div class="fixed-action-btn">
-        <a class="btn-floating btn-large waves-effect deep-purple lighten-2 z-depth-2">
-          <i class="large material-icons">more_vert</i>
-        </a>
+    <!-- Main -->
+    <div id="main">
+      <!-- One -->
+      <section id="one">
+        <header class="major">
+          <h2>About Me</h2>
+          <a href="./assets/HuzaifahNadeem.pdf" class="button small icon solid fa-file-pdf"
+            style="float: right">Resume</a>
+        </header>
+        <p>
+          I am a Computer Science senior at LUMS, Lahore, Pakistan. <br>
+          Apart from CS, I am also quite interested in Physics and Mathematics. <br>
+          When I'm not working, You will either find me playing <a href="https://en.wikipedia.org/wiki/Civilization_VI">Civilization 6</a> or <a href="https://en.wikipedia.org/wiki/Cities:_Skylines">Cities: Skylines</a>, or watching some of my favourite movies. I also like to stay updated on current affairs as well as world history and mythology.
+        </p>
+        <h3>Research Interests</h3>
         <ul>
-          <li><a href="#" class="btn-floating deep-purple waves-effect" id="form_button"><i class="material-icons">message</i></a></li>
-          <li><a href="tel:+923337317147" class="btn-floating red waves-effect"><i class="material-icons">phone</i></a></li>
-          <li><a href="mailto:huzaifahnadeem@gmail.com" class="btn-floating yellow darken-1 waves-effect"><i class="material-icons">email</i></a></li>
+          <li>Program Analysis</li>
+          <li>Privacy and Censorship</li>
+          <li>Digital Wellbeing</li>
+          <li>Networks and Systems</li>
+          <li>Internet Measurements</li>
         </ul>
-      </div>   
+        <p>
+          Although I am primarily interested in Applied Computer Science Programming projects and research, I also enjoy ocassional read of a theoretical topic in Computer Science as well. 
+        </p>
+        <h3>Education</h3>
+        <blockquote>
+          <h4>
+            <a href="https://lums.edu.pk/">
+              <img src="images/LUMS-Logo.png" class="image inline" />
+            </a>
+            &nbsp;&nbsp;Lahore University of Management Sciences (LUMS), Lahore
+          </h4>
+          <b>BS in Computer Science with a minor in Mathematics</b><br />
+          <i>2018 - Present (Expected Graduation: June, 2022)</i>
+        </blockquote>
+        <h3>Experience</h3>
+        <blockquote>
+          <h4>
+            <a href="https://lums.edu.pk/">
+              <img src="images/LUMS-Logo.png" class="image inline" />
+            </a>
+            &nbsp;&nbsp;Lahore University of Management Sciences, Lahore
+          </h4>
+          <b>Teaching Assistant for CS 200: Introduction to Programming</b><br/>
+          <i>Spring 2021 (Jan 2021 - May 2021)</i><br />
+          <b>Teaching Assistant for CS 100: Computational Problem Solving</b><br/>
+          <i>Fall 2020 (September 2020 - December 2020)</i><br />
+        </blockquote>
+        <!-- <ul class="actions">
+          <li><a href="#" class="button">Learn More</a></li>
+        </ul> -->
+      </section>
 
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/init.js"></script>
+      <!-- Two -->
 
-      <!-- For gForm:  -->
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      
-    </body>
-  </html>
+      <!-- <section id="two">
+        <h2>Projects</h2>
+        <div class="row">
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="./images/fulls/LUMS_Student_Portal.png" class="image fit thumb"><img src="images/thumbs/LUMS_Student_Portal.webp"
+                alt="" /></a>
+            <h3>
+              LUMS Student Portal
+            </h3>
+            <p>
+              A cross-platform (Android, iOS, and web) app for LUMS Student Council that provides a communication
+              platform between the council and the students along with an integrated Complaint Management System. It
+              has been built using using Google’s Flutter framework along with Firebase Authentication and Firestore
+              (noSQL database) for backend. The project was made as the semester project of Software Engineering course, and is in Acceptance Testing phase currently.
+            </p>
+          </article>
+          
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/madadgaar.jpg" class="image fit thumb"><img src="images/thumbs/COVID-19_Prediction.webp"
+                alt="" /></a>
+            <h3>
+              <a href="https://www.madadgaar.com.pk/">COVID-19 Curve Prediction for Pakistan</a>
+            </h3>
+            <p>
+              A Machine Learning Model that ... You can read the project's Blog post <a href="https://huzaifahnadeem.medium.com/identifying-potential-factors-that-correlate-with-the-trend-of-covid-19-cases-in-pakistan-f0a22f0982d7">here</a>
+            </p>
+          </article>
+          
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/chord.jpg" class="image fit thumb"><img src="images/thumbs/chord.jpg" alt="" /></a>
+            <h3>Chord DHT with File Sharing</h3>
+            <p>
+              Distributed Hash Table based File Sharing System using Chord
+              protocol. Part of my Network-Centric Computing course.
+              <a href="">GitHub repo.
+              </a>
+            </p>
+          </article>
+        </div>
+      </section> 
+    </div> -->
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <ul class="icons">
+          <li>
+            <a href="https://www.linkedin.com/in/huzaifahnadeem/" target="_blank"
+              class="icon brands fa-linkedin fa-2x"><span class="label">LinkedIn</span></a>
+          </li>
+          <li>
+            <a href="https://github.com/huzaifahnadeem" target="_blank" class="icon brands fa-github fa-2x"><span
+                class="label">Github</span></a>
+          </li>
+          <li>
+            <a href="mailto:huzaifahnadeem@gmail.com" class="icon solid fa-envelope fa-2x"><span
+                class="label">Email</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <small>Last updated: 6th June, 2021</small>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+
+</html>
