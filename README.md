@@ -10,7 +10,7 @@ _Sahiti Bommareddy, Maher Khan, <ins>Huzaifah Nadeem</ins>, Benjamin Gilby, Imes
 43rd International Symposium on Reliable Distributed Systems [(SRDS 2024)](https://srds-conference.org/){:target="_blank" rel="noopener"}   
 [[PDF]](https://sites.pitt.edu/~babay/pubs/srds24_compoundThreats.pdf){:target="_blank" rel="noopener"} [[Slides]](huzaifahnadeem.github.io/files/SRDS2024-compound-threats-slides.pptx)
 
-- **SoK: A Tale of Reduction, Security, and Correctness - Evaluating Program Debloating Paradigms and Their Compositions**
+- **SoK: A Tale of Reduction, Security, and Correctness - Evaluating Program Debloating Paradigms and Their Compositions**   
 _Muaz Ali, Muhammad Muzammil, Faraz Karim, Ayesha Naeem, Rukhshan Haroon, Muhammad Haris, </ins>Huzaifah Nadeem</ins>, Waseem Sabir, Fahad Shaon, Fareed Zaffar, Vinod Yegneswaran, Ashish Gehani, Sazzadur Rahaman_   
 28th European Symposium on Research in Computer Security [(ESORICS 2023)](https://esorics2023.org/){:target="_blank" rel="noopener"}   
 [[Link]](https://doi.org/10.1007/978-3-031-51482-1_12){:target="_blank" rel="noopener"}
