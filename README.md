@@ -5,7 +5,7 @@ Before Pitt, I studied at [Lahore University of Management Science (LUMS)](https
 
 # Publications:
 ## Conference Papers:
-*Tolerating Compound Threats in Critical Infrastructure Control Systems*
+**Tolerating Compound Threats in Critical Infrastructure Control Systems**
 _Sahiti Bommareddy, Maher Khan, Huzaifah Nadeem, Benjamin Gilby, Imes Chiu, John W. van de Lindt, Omar Nofal, Mathaios Panteli, Linton Wells II, Yair Amir, and Amy Babay_
 43rd International Symposium on Reliable Distributed Systems [(SRDS 2024)](https://srds-conference.org/)
 [[PDF](https://sites.pitt.edu/~babay/pubs/srds24_compoundThreats.pdf)
