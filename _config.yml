@@ -1,6 +1,4 @@
-title: Huzaifah Nadeem personal webpage
-description: Huzaifah Nadeem personal webpage
+title: Huzaifah Nadeem's personal webpage
+description: This is Huzaifah Nadeem's personal webpage
 
-remote_theme: pages-themes/minimal@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+theme: jekyll-theme-minimal
