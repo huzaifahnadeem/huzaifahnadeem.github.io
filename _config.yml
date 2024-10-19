@@ -5,4 +5,4 @@ theme: jekyll-theme-minimal
 
 markdown: kramdown # this allows the ability to add links that open in new tab e.g. [go](http://stackoverflow.com){:target="_blank" rel="noopener"} (src: https://stackoverflow.com/questions/41915571/open-link-in-new-tab-with-github-markdown-using-target-blank)
 
-baseurl: /files # to allow downloding of files
+# baseurl: /files # to allow downloding of files
