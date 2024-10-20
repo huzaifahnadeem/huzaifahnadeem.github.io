@@ -1,1 +1,1 @@
-The repository for my personal webpage at [huzaifahnadeem.github.io](huzaifahnadeem.github.io)
+The repository for my personal webpage at [huzaifahnadeem.github.io](http://huzaifahnadeem.github.io)
