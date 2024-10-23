@@ -16,7 +16,7 @@ _Muaz Ali, Muhammad Muzammil, Faraz Karim, Ayesha Naeem, Rukhshan Haroon, Muhamm
 [[Link]](https://doi.org/10.1007/978-3-031-51482-1_12){:target="_blank" rel="noopener"}
 
 ## Other Papers:
-- **PhD Forum: Evaluating and Designing Routing Protocols for Reliable Distributed Quantum Systems** <span style="color:red">Winner of the SRDS Ph.D. Forum Award</span>   
+- **PhD Forum: Evaluating and Designing Routing Protocols for Reliable Distributed Quantum Systems** <span style="color:red">Winner of the SRDS PhD Forum Award</span>   
 _<ins>Huzaifah Nadeem</ins>_   
 43rd International Symposium on Reliable Distributed Systems [(SRDS 2024)](https://srds-conference.org/){:target="_blank" rel="noopener"}   
 [[Link]](files/tmp/phd-forum-paper.pdf){:target="_blank" rel="noopener"} [[Slides]](files/SRDS2024/phd-forum-slides.pptx){:target="_blank" rel="noopener"} [[Poster]](files/SRDS2024/phd-forum-poster.pdf){:target="_blank" rel="noopener"}
