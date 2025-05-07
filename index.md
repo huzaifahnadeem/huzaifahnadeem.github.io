@@ -17,9 +17,9 @@ _Muaz Ali, Muhammad Muzammil, Faraz Karim, Ayesha Naeem, Rukhshan Haroon, Muhamm
 
 ## Workshop and Other Peer Reviewed Papers:
 - **Using Digital Twins as an Upgrade Path for Critical Infrastructure Control Systems**   
-_<ins>Huzaifah Nadeem</ins> and and Amy Babay_   
+_<ins>Huzaifah Nadeem</ins> and Amy Babay_   
 To appear in the Proceedings of the 55th Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops [(DSN-W 2025)](https://dsn2025.github.io/){:target="_blank" rel="noopener"} for the 1st International Workshop on Digital Twins for Dependability, Resilience and Security [(DT4DRS 2025)](https://dt4drs2025.dieti.unina.it/){:target="_blank" rel="noopener"}
-<!-- [[IEEEXplore]](https://ieeexplore.ieee.org/){:target="_blank" rel="noopener"} [[PDF]](https://sites.pitt.edu/~babay/pubs/_.pdf){:target="_blank" rel="noopener"} [[Slides]](files/DSN2025/_.pptx){:target="_blank" rel="noopener"}  -->
+[IEEEXplore] [PDF] [Slides]
 
 - **PhD Forum: Evaluating and Designing Routing Protocols for Reliable Distributed Quantum Systems** <span style="color:red">Winner of the SRDS PhD Forum Award</span>   
 _<ins>Huzaifah Nadeem</ins>_   
