@@ -15,7 +15,7 @@ _Muaz Ali, Muhammad Muzammil, Faraz Karim, Ayesha Naeem, Rukhshan Haroon, Muhamm
 28th European Symposium on Research in Computer Security ([ESORICS](https://link.springer.com/conference/esorics){:target="_blank" rel="noopener"} [2023](https://esorics2023.org/){:target="_blank" rel="noopener"})   
 [[Springer]](https://doi.org/10.1007/978-3-031-51482-1_12){:target="_blank" rel="noopener"} [[PDF]](http://www.csl.sri.com/users/gehani/papers/ESORICS-2023.Debloat.pdf){:target="_blank" rel="noopener"}
 
-## Workshop and Other Peer Reviewd Papers:
+## Workshop and Other Peer Reviewed Papers:
 - **Using Digital Twins as an Upgrade Path for Critical Infrastructure Control Systems**   
 _<ins>Huzaifah Nadeem</ins> and and Amy Babay_   
 To appear in the Proceedings of the 55th Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops [(DSN-W 2025)](https://dsn2025.github.io/){:target="_blank" rel="noopener"} for the 1st International Workshop on Digital Twins for Dependability, Resilience and Security [(DT4DRS 2025)](https://dt4drs2025.dieti.unina.it/){:target="_blank" rel="noopener"}
