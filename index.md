@@ -18,10 +18,10 @@ _Muaz Ali, Muhammad Muzammil, Faraz Karim, Ayesha Naeem, Rukhshan Haroon, Muhamm
 ## Workshop and Other Peer Reviewd Papers:
 - **Using Digital Twins as an Upgrade Path for Critical Infrastructure Control Systems**   
 _<ins>Huzaifah Nadeem</ins> and and Amy Babay_   
-To appear in Proceedings of the 55th Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops [(DSN-W 2025)](https://dsn2025.github.io/){:target="_blank" rel="noopener"} for the 1st International Workshop on Digital Twins for Dependability, Resilience and Security [(DT4DRS 2025)](https://dt4drs2025.dieti.unina.it/){:target="_blank" rel="noopener"}
+To appear in the Proceedings of the 55th Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops [(DSN-W 2025)](https://dsn2025.github.io/){:target="_blank" rel="noopener"} for the 1st International Workshop on Digital Twins for Dependability, Resilience and Security [(DT4DRS 2025)](https://dt4drs2025.dieti.unina.it/){:target="_blank" rel="noopener"}
 <!-- [[IEEEXplore]](https://ieeexplore.ieee.org/){:target="_blank" rel="noopener"} [[PDF]](https://sites.pitt.edu/~babay/pubs/_.pdf){:target="_blank" rel="noopener"} [[Slides]](files/DSN2025/_.pptx){:target="_blank" rel="noopener"}  -->
 
 - **PhD Forum: Evaluating and Designing Routing Protocols for Reliable Distributed Quantum Systems** <span style="color:red">Winner of the SRDS PhD Forum Award</span>   
 _<ins>Huzaifah Nadeem</ins>_   
-43rd International Symposium on Reliable Distributed Systems [(SRDS 2024)](https://srds-conference.org/){:target="_blank" rel="noopener"}   
+43rd International Symposium on Reliable Distributed Systems ([SRDS](https://srds-conference.org/){:target="_blank" rel="noopener"} [2024](https://srds-conference.org/2024/index.html){:target="_blank" rel="noopener"})   
 [[IEEEXplore]](https://ieeexplore.ieee.org/document/10806507){:target="_blank" rel="noopener"} [[PDF]](files/tmp/phd-forum-paper.pdf){:target="_blank" rel="noopener"} [[Slides]](files/SRDS2024/phd-forum-slides.pptx){:target="_blank" rel="noopener"} [[Poster]](files/SRDS2024/phd-forum-poster.pdf){:target="_blank" rel="noopener"} [[Tool]](https://github.com/huzaifahnadeem/qnet-sim){:target="_blank" rel="noopener"}
