@@ -1,7 +1,7 @@
 # About Me:
 Welcome to my webpage. My name is Huzaifah Nadeem. I am a 4th year Computer Science PhD student at the [University of Pittsburgh](https://pitt.edu/){:target="_blank" rel="noopener"}. At Pitt, I am an advisee of [Dr. Amy Babay](https://sites.pitt.edu/~babay/){:target="_blank" rel="noopener"}. I have a variety of interests, but lately I have been working with Distributed Systems, Formal Verification, and Quantum Networks. 
 
-Before Pitt, I studied at [Lahore University of Management Science (LUMS)](https://lums.edu.pk/){:target="_blank" rel="noopener"} in Lahore, Pakistan. From there, I got my BS in Computer Science with a minor in Mathematics.
+Before Pitt, I studied at [Lahore University of Management Science (LUMS)](https://lums.edu.pk/){:target="_blank" rel="noopener"} in Lahore, Pakistan. From there, I got a BS in Computer Science with a minor in Mathematics.
 
 # Publications:
 ## Conference Papers:
