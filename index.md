@@ -18,7 +18,7 @@ In the Proceedings of the 28th European Symposium on Research in Computer Securi
 ## Workshop and Other Peer Reviewed Papers:
 - **Using Digital Twins as an Upgrade Path for Critical Infrastructure Control Systems**   
 _<ins>Huzaifah Nadeem</ins> and Amy Babay_   
-In the Proceedings of the 55th Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops [(DSN-W 2025)](https://dsn2025.github.io/){:target="_blank" rel="noopener"} for the 1st International Workshop on Digital Twins for Dependability, Resilience and Security [(DT4DRS 2025)](https://dt4drs2025.dieti.unina.it/){:target="_blank" rel="noopener"}
+In the Proceedings of the 55th Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops [(DSN-W 2025)](https://dsn2025.github.io/){:target="_blank" rel="noopener"} for the 1st International Workshop on Digital Twins for Dependability, Resilience and Security ([DT4DRS 2025](https://dt4drs2025.dieti.unina.it/){:target="_blank" rel="noopener"})
 [[IEEEXplore]](https://ieeexplore.ieee.org/abstract/document/11071557){:target="_blank" rel="noopener"} [[PDF]](https://sites.pitt.edu/~babay/pubs/dt4drs25_upgrade.pdf){:target="_blank" rel="noopener"} [[Slides]](files/DSN2025/DT-workshop-paper-slides.pptx){:target="_blank" rel="noopener"}
 
 - **PhD Forum: Evaluating and Designing Routing Protocols for Reliable Distributed Quantum Systems** <span style="color:red">Winner of the SRDS PhD Forum Award</span>   
