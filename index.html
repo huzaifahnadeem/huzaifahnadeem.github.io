@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================================================
+     EDIT THESE FOR SEO / LINK PREVIEWS 
+     ============================================================ -->
+<title>Huzaifah Nadeem — PhD Candidate, Computer Science</title>
+<meta name="description" content="Huzaifah Nadeem is a PhD candidate in Computer Science at the University of Pittsburgh, working on resilience and fault tolerance in critical-infrastructure control systems, with interests in distributed systems and quantum networks.">
+<link rel="canonical" href="https://huzaifahnadeem.github.io/">
+
+<!-- Open Graph / Twitter (how the link looks when shared on LinkedIn, Slack, etc.) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Huzaifah Nadeem">
+<meta property="og:description" content="PhD candidate in Computer Science at the University of Pittsburgh — resilience in control systems, distributed systems, and quantum networks.">
+<meta property="og:url" content="https://huzaifahnadeem.github.io/">
+<meta property="og:image" content="https://huzaifahnadeem.github.io/files/personal/avatar.jpeg">
+<meta name="twitter:card" content="summary">
+
+<!-- OPTIONAL font (one heading face). Delete this line to go 100% dependency-free;
+     the page falls back to Georgia and still looks fine. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   1. DESIGN TOKENS  — change colors/fonts in ONE place here
+   ============================================================ */
+:root{
+  --bg:        #fdfdfb;   /* page background (clean warm white) */
+  --ink:       #1b1d1e;   /* main text */
+  --muted:     #5b6166;   /* secondary text: dates, venues */
+  --accent:    #0f6e70;   /* the one accent color — change this to re-theme */
+  --accent-bg: #0f6e7014; /* faint accent tint for tags (last 2 hex = opacity) */
+  --rule:      #00000014; /* hairline divider color */
+  --chip:      #00000010; /* link-chip border */
+
+  --serif: "Spectral", Georgia, "Times New Roman", serif;
+  --sans:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono:  ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  --maxw: 760px;          /* reading width */
+}
+
+/* Dark mode is automatic, based on the visitor's system setting. No toggle, no JS. */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:        #15181b;
+    --ink:       #e7e9ea;
+    --muted:     #9aa1a6;
+    --accent:    #54bdb8;
+    --accent-bg: #54bdb820;
+    --rule:      #ffffff18;
+    --chip:      #ffffff20;
+  }
+}
+
+/* ============================================================
+   2. BASE
+   ============================================================ */
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+a{ color:var(--accent); text-decoration:none; }
+a:hover{ text-decoration:underline; }
+:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; border-radius:2px; }
+
+.wrap{ max-width:var(--maxw); margin:0 auto; padding:0 24px; }
+
+/* ============================================================
+   3. HEADER
+   ============================================================ */
+.masthead{ padding:64px 0 28px; }
+.masthead-inner{
+  display:flex; gap:28px; align-items:center; flex-wrap:wrap;
+}
+.photo{
+  width:118px; height:118px; border-radius:50%;
+  object-fit:cover; flex:none;
+  border:1px solid var(--rule);
+}
+.name{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:clamp(2rem, 5vw, 2.7rem);
+  line-height:1.05;
+  letter-spacing:-0.01em;
+  margin:0 0 10px;
+}
+.tagline{
+  margin:0;
+  max-width:46ch;
+  color:var(--muted);
+  font-size:1.02rem;
+}
+/* inline link row under the header */
+.links{
+  margin-top:22px; padding:0; list-style:none;
+  display:flex; flex-wrap:wrap; gap:6px 0;
+  font-size:0.95rem;
+}
+.links li{ display:flex; align-items:center; }
+.links li:not(:last-child)::after{
+  content:"·"; color:var(--muted); margin:0 12px;
+}
+
+/* ============================================================
+   4. STICKY NAV
+   ============================================================ */
+.nav{
+  position:sticky; top:0; z-index:10;
+  background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:blur(8px);
+  border-top:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+}
+.nav .wrap{
+  display:flex; flex-wrap:wrap; gap:4px 22px;
+  padding-top:13px; padding-bottom:13px;
+}
+.nav a{
+  color:var(--muted);
+  font-size:0.82rem; letter-spacing:0.04em; text-transform:uppercase;
+}
+.nav a:hover{ color:var(--accent); text-decoration:none; }
+
+/* ============================================================
+   5. SECTIONS
+   ============================================================ */
+main{ padding:10px 0 40px; }
+.section{
+  padding:38px 0;
+  border-bottom:1px solid var(--rule);
+  scroll-margin-top:60px;            /* so the sticky nav doesn't cover headings */
+}
+.section:last-of-type{ border-bottom:none; }
+/* the small uppercase label that names each section (the "eyebrow") */
+.eyebrow{
+  font-family:var(--mono);
+  font-size:0.72rem; letter-spacing:0.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 18px;
+}
+.section p{ margin:0 0 14px; }
+.section p:last-child{ margin-bottom:0; }
+em{ font-style:italic; }
+
+/* ============================================================
+   6. ENTRY BLOCKS (research roles, teaching, education)
+   ============================================================ */
+.entry{ margin:0 0 26px; }
+.entry:last-child{ margin-bottom:0; }
+.entry-head{
+  display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;
+  align-items:baseline;
+}
+.entry-title{ font-weight:600; }
+.entry-where{ color:var(--muted); font-size:0.95rem; }
+.entry-when{ color:var(--muted); font-size:0.85rem; font-family:var(--mono); white-space:nowrap; }
+.entry-body{ margin:6px 0 0; color:var(--ink); }
+.entry-body .muted{ color:var(--muted); }
+
+/* ============================================================
+   7. PUBLICATIONS
+   ============================================================ */
+.pub-group{ margin-bottom:30px; }
+.pub-group:last-child{ margin-bottom:0; }
+.pub-group-label{
+  font-size:0.82rem; letter-spacing:0.04em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 16px; font-weight:600;
+}
+.pub{
+  display:grid;
+  grid-template-columns:46px 1fr;   /* [tag] | content */
+  gap:14px;
+  margin-bottom:22px;
+}
+.pub:last-child{ margin-bottom:0; }
+.pub-id{
+  font-family:var(--mono); font-size:0.75rem;
+  color:var(--accent); background:var(--accent-bg);
+  border-radius:4px; padding:2px 0; text-align:center;
+  height:fit-content; margin-top:3px;
+}
+.pub-title{ font-weight:600; line-height:1.4; }
+.pub-authors{ font-size:0.95rem; color:var(--ink); margin:3px 0; }
+.pub-authors .me{ color:var(--accent); font-weight:600; }
+.pub-venue{ font-size:0.9rem; color:var(--muted); }
+/* award flag */
+.award{
+  display:inline-block; font-family:var(--mono); font-size:0.68rem;
+  letter-spacing:0.04em; text-transform:uppercase;
+  color:var(--accent); border:1px solid var(--accent);
+  border-radius:4px; padding:1px 6px; margin-left:6px; vertical-align:middle;
+}
+/* small [PDF] [Slides] etc. link chips */
+.chips{ margin-top:9px; display:flex; flex-wrap:wrap; gap:6px; }
+.chips a{
+  font-family:var(--mono); font-size:0.74rem;
+  color:var(--ink); border:1px solid var(--chip);
+  border-radius:5px; padding:2px 8px;
+}
+.chips a:hover{ border-color:var(--accent); color:var(--accent); text-decoration:none; }
+.footnote{ font-size:0.82rem; color:var(--muted); margin-top:18px; }
+
+/* ============================================================
+   8. SIMPLE LISTS (honors, service)
+   ============================================================ */
+.stack{ list-style:none; margin:0; padding:0; }
+.stack li{
+  display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;
+  padding:9px 0; border-top:1px solid var(--rule);
+}
+.stack li:first-child{ border-top:none; }
+.stack .what{ font-weight:500; }
+.stack .what small{ font-weight:400; color:var(--muted); display:block; font-size:0.9rem; }
+.stack .when{ color:var(--muted); font-family:var(--mono); font-size:0.82rem; white-space:nowrap; }
+.subhead{
+  font-size:0.82rem; letter-spacing:0.04em; text-transform:uppercase;
+  color:var(--muted); font-weight:600; margin:24px 0 10px;
+}
+.subhead:first-child{ margin-top:0; }
+
+/* ============================================================
+   9. FOOTER
+   ============================================================ */
+footer{
+  padding:30px 0 60px; color:var(--muted); font-size:0.85rem;
+}
+
+/* ============================================================
+   10. RESPONSIVE
+   ============================================================ */
+@media (max-width:560px){
+  .masthead{ padding-top:44px; }
+  .masthead-inner{ gap:20px; }
+  .photo{ width:88px; height:88px; }
+  .pub{ grid-template-columns:40px 1fr; gap:10px; }
+  body{ font-size:16px; }
+}
+
+/* respect visitors who turn off motion */
+@media (prefers-reduced-motion:reduce){
+  html{ scroll-behavior:auto; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============================================================
+     HEADER  — name, photo, one-line bio, profile links
+     ============================================================ -->
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <!-- Photo: served from your repo. alt text describes the image (was "Logo" before). -->
+    <img class="photo" src="https://huzaifahnadeem.github.io/files/personal/avatar.jpeg" alt="Huzaifah Nadeem">
+    <div>
+      <h1 class="name">Huzaifah Nadeem</h1>
+      <p class="tagline">PhD candidate in Computer Science at the University of Pittsburgh — working on resilience and fault tolerance in critical-infrastructure control systems, with interests in distributed systems and quantum networks.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <ul class="links">
+      <!-- TODO: confirm this CV path / upload cv.pdf to that location in your repo -->
+      <li><a href="files/personal/cv.pdf">CV</a></li>
+      <li><a href="https://www.linkedin.com/in/huzaifahnadeem/">LinkedIn</a></li>
+      <li><a href="https://scholar.google.com/citations?user=MvH7pcIAAAAJ&hl=en&oi=ao">Google&nbsp;Scholar</a></li>
+      <li><a href="https://orcid.org/0009-0004-3460-6585">ORCID</a></li>
+      <li>h.nadeem&nbsp;[at]&nbsp;pitt.edu</li>
+    </ul>
+  </div>
+</header>
+
+<!-- ============================================================
+     NAV  — anchor links to the sections below
+     ============================================================ -->
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#service">Service</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section">
+    <p class="eyebrow">About</p>
+    <p>I am a PhD candidate in Computer Science at the <a href="https://pitt.edu/">University of Pittsburgh</a>, advised by <a href="https://sites.pitt.edu/~babay/">Dr. Amy Babay</a>, with an expected graduation in 2027. My dissertation, <em>Improving Resilience in Control Systems Using Reconfiguration</em>, studies how critical-infrastructure control systems can keep running through faults and attacks. More broadly, I work on distributed systems, cyber-physical systems, formal methods, and quantum networks.</p>
+    <p>Before Pitt, I earned a BS in Computer Science with a minor in Mathematics from the <a href="https://lums.edu.pk/">Lahore University of Management Sciences (LUMS)</a> in Lahore, Pakistan, graduating with High Merit in 2022.</p>
+  </section>
+
+  <!-- ===================== RESEARCH ===================== -->
+  <section id="research" class="section">
+    <p class="eyebrow">Research Experience</p>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span><span class="entry-title">Graduate Student Researcher</span> · <span class="entry-where">Cyber Energy Center, University of Pittsburgh</span></span>
+        <span class="entry-when">Sep 2024 – Aug 2026</span>
+      </div>
+      <p class="entry-body"><span class="muted">Intrusion Tolerance using Cyber Digital Twins.</span> Investigating how cyber digital twins can strengthen intrusion tolerance in critical-infrastructure control systems, with a focus on using them as an upgrade path for legacy systems.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span><span class="entry-title">Graduate Student Researcher</span> · <span class="entry-where">School of Computing and Information, University of Pittsburgh</span></span>
+        <span class="entry-when">Sep 2022 – Aug 2023</span>
+      </div>
+      <p class="entry-body"><span class="muted">Severe Impact Resilience: Framework for Adaptive Compound Threats.</span> Studied how to improve control-system resilience against "compound threats," in which a cyberattack is timed to follow a natural hazard (e.g., a hurricane) that has already temporarily degraded the system.</p>
+    </div>
+  </section>
+
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <section id="publications" class="section">
+    <p class="eyebrow">Publications</p>
+
+    <!-- Conference -->
+    <div class="pub-group">
+      <p class="pub-group-label">Conference Papers</p>
+
+      <div class="pub">
+        <div class="pub-id">C-2</div>
+        <div>
+          <div class="pub-title">Tolerating Compound Threats in Critical Infrastructure Control Systems<span class="award">Best Paper</span></div>
+          <div class="pub-authors">Sahiti Bommareddy, Maher Khan, <span class="me">Huzaifah Nadeem</span>, Benjamin Gilby, Imes Chiu, John W. van de Lindt, Omar Nofal, Mathaios Panteli, Linton Wells II, Yair Amir, and Amy Babay</div>
+          <div class="pub-venue">43rd Int'l Symposium on Reliable Distributed Systems (SRDS), 2024, pp. 66–79.</div>
+          <div class="chips">
+            <a href="https://ieeexplore.ieee.org/document/10806616">IEEE Xplore</a>
+            <a href="https://sites.pitt.edu/~babay/pubs/srds24_compoundThreats.pdf">PDF</a>
+            <a href="https://huzaifahnadeem.github.io/files/pubs/SRDS2024/compound-threats-slides.pptx">Slides</a>
+            <a href="https://github.com/spire-resilient-systems/compound_threat_analyzer">Tool</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-id">C-1</div>
+        <div>
+          <div class="pub-title">SoK: A Tale of Reduction, Security, and Correctness — Evaluating Program Debloating Paradigms and Their Compositions</div>
+          <div class="pub-authors">Muaz Ali, Muhammad Muzammil, Faraz Karim, Ayesha Naeem, Rukhshan Haroon, Muhammad Haris, <span class="me">Huzaifah Nadeem</span>, Waseem Sabir, Fahad Shaon, Fareed Zaffar, Vinod Yegneswaran, Ashish Gehani, and Sazzadur Rahaman</div>
+          <div class="pub-venue">28th European Symposium on Research in Computer Security (ESORICS), 2023.</div>
+          <div class="chips">
+            <a href="https://doi.org/10.1007/978-3-031-51482-1_12">Springer</a>
+            <a href="http://www.csl.sri.com/users/gehani/papers/ESORICS-2023.Debloat.pdf">PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Workshop / other -->
+    <div class="pub-group">
+      <p class="pub-group-label">Workshop &amp; Other Peer-Reviewed Papers</p>
+
+      <div class="pub">
+        <div class="pub-id">W-2</div>
+        <div>
+          <div class="pub-title">Using Digital Twins as an Upgrade Path for Critical Infrastructure Control Systems</div>
+          <div class="pub-authors"><span class="me">Huzaifah Nadeem</span> and Amy Babay</div>
+          <div class="pub-venue">1st Int'l Workshop on Digital Twins for Dependability, Resilience and Security (DT4DRS), at DSN-W, 2025, pp. 168–175.</div>
+          <div class="chips">
+            <a href="https://ieeexplore.ieee.org/abstract/document/11071557">IEEE Xplore</a>
+            <a href="https://sites.pitt.edu/~babay/pubs/dt4drs25_upgrade.pdf">PDF</a>
+            <a href="https://huzaifahnadeem.github.io/files/pubs/DSN2025/DT-workshop-paper-slides.pptx">Slides</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-id">W-1</div>
+        <div>
+          <div class="pub-title">PhD Forum: Evaluating and Designing Routing Protocols for Reliable Distributed Quantum Systems<span class="award">PhD Forum Award</span></div>
+          <div class="pub-authors"><span class="me">Huzaifah Nadeem</span></div>
+          <div class="pub-venue">43rd Int'l Symposium on Reliable Distributed Systems (SRDS), 2024, pp. 330–333.</div>
+          <!-- NOTE: this PDF still lives under /files/tmp/ — worth moving it to a stable folder so the link doesn't break. -->
+          <div class="chips">
+            <a href="https://ieeexplore.ieee.org/document/10806507">IEEE Xplore</a>
+            <a href="https://huzaifahnadeem.github.io/files/pubs/SRDS2024/phd-forum-paper.pdf">PDF</a>
+            <a href="https://huzaifahnadeem.github.io/files/pubs/SRDS2024/phd-forum-slides.pptx">Slides</a>
+            <a href="https://huzaifahnadeem.github.io/files/pubs/SRDS2024/phd-forum-poster.pdf">Poster</a>
+            <a href="https://github.com/huzaifahnadeem/qnet-sim">Tool</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="footnote">In author lists, my name is highlighted. The compound-threats paper (C-2) had three equal-contribution lead authors.</p>
+  </section>
+
+  <!-- ===================== HONORS ===================== -->
+  <section id="honors" class="section">
+    <p class="eyebrow">Honors &amp; Awards</p>
+    <ul class="stack">
+      <li>
+        <span class="what">Best Paper Award<small>SRDS 2024 — "Tolerating Compound Threats in Critical Infrastructure Control Systems"</small></span>
+        <span class="when">2024</span>
+      </li>
+      <li>
+        <span class="what">SRDS PhD Forum Award<small>SRDS 2024 — routing protocols for reliable distributed quantum systems</small></span>
+        <span class="when">2024</span>
+      </li>
+      <!-- <li>
+        <span class="what">DSN Student Travel Award<small>55th IEEE/IFIP Conf. on Dependable Systems and Networks (DSN 2025)</small></span>
+        <span class="when">2025</span>
+      </li> -->
+    </ul>
+  </section>
+
+  <!-- ===================== TEACHING ===================== -->
+  <section id="teaching" class="section">
+    <p class="eyebrow">Teaching</p>
+
+    <p class="subhead">Credential</p>
+    <p>Achievement in Pedagogy (AiP) Badge — University Center for Teaching and Learning, University of Pittsburgh. Earned across Pedagogy, Educational Technology, and Online Teaching.</p>
+
+    <p class="subhead">Instructional Experience</p>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Co-Instructor (with Dr. Amy Babay)</span>
+        <span class="entry-when">Fall 2025</span>
+      </div>
+      <p class="entry-body">CS 2520 / TELCOM 2321: Wide Area Networks (graduate) — fundamentals and recent research results.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Guest Lecturer (for Dr. Amy Babay)</span>
+        <span class="entry-when">Spring 2025, 2026</span>
+      </div>
+      <p class="entry-body">Lectures and labs for CS 1652: Data Communication and Computer Networks (undergraduate) and TELCOM 2310: Applications of Networks (graduate); topics included Attack-Resilient Application Architectures and Advanced Routing, plus a socket-programming lab.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Teaching Assistant &amp; Recitation Instructor</span>
+        <span class="entry-when">Fall 2023 – Summer 2024</span>
+      </div>
+      <p class="entry-body">University of Pittsburgh — including CS 2510 Operating Systems, CS 2520 Wide Area Networks, CS 1613 Quantum Computation (recitation instructor; OMET 4.50/5.00), CS 1657 Privacy in the Electronic Society, CS 0007 Intro to Programming, and CMPINF 401.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Undergraduate Teaching Assistant</span>
+        <span class="entry-when">Fall 2020 – Spring 2022</span>
+      </div>
+      <p class="entry-body">LUMS — CS 100 Computational Problem Solving, CS 200 Intro to Programming, CS 340 Databases, and CS 300 Advanced Programming.</p>
+    </div>
+
+    <p class="subhead">Course Materials Developed</p>
+    <p>For CS 2520 / TELCOM 2321 (with Dr. Longfei Shangguan): a project comparing TCP Reno and CUBIC against BBR on the FABRIC testbed under emulated conditions; and a project building server/client video-streaming pipelines to study how delay, drop rate, buffering, and adaptive bitrate affect perceived smoothness.</p>
+  </section>
+
+  <!-- ===================== SERVICE ===================== -->
+  <section id="service" class="section">
+    <p class="eyebrow">Service</p>
+
+    <p class="subhead">Program Committees &amp; Reviewing</p>
+    <ul class="stack">
+      <li><span class="what">Reviewer — ISSRE 2026</span><span class="when">2026</span></li>
+      <li><span class="what">Shadow TPC — ACM IMC 2026</span><span class="when">2026</span></li>
+      <li><span class="what">Demo PC — ACM CCS 2026</span><span class="when">2026</span></li>
+      <li><span class="what">Program Committee — DT4DRS @ DSN 2026</span><span class="when">2026</span></li>
+    </ul>
+
+    <p class="subhead">Artifact Evaluation Committees</p>
+    <ul class="stack">
+      <li><span class="what">DSN 2026</span><span class="when">2026</span></li>
+      <li><span class="what">ACM CCS 2026</span><span class="when">2026</span></li>
+      <li><span class="what">NDSS Symposium 2026</span><span class="when">2026</span></li>
+    </ul>
+
+    <p class="subhead">Other</p>
+    <ul class="stack">
+      <li><span class="what">Student Volunteer — DSN 2025</span><span class="when">2025</span></li>
+      <li><span class="what">Graduate Student Representative, Academic Council<small>School of Computing and Information, University of Pittsburgh</small></span><span class="when">2023–24</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <!-- Hand-written HTML, hosted on GitHub Pages. -->
+</footer>
+
+</body>
+</html>
